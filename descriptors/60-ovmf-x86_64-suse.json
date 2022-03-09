@@ -1,0 +1,36 @@
+{
+    "description": "UEFI firmware for x86_64, with Secure Boot, and SUSE certs enrolled",
+    "interface-types": [
+        "uefi"
+    ],
+    "mapping": {
+        "device": "flash",
+        "executable": {
+            "filename": "@DATADIR@/ovmf-x86_64-suse-4m-code.bin",
+            "format": "raw"
+        },
+        "nvram-template": {
+            "filename": "@DATADIR@/ovmf-x86_64-suse-4m-vars.bin",
+            "format": "raw"
+        }
+    },
+    "targets": [
+        {
+            "architecture": "x86_64",
+            "machines": [
+                "pc-i440fx-*",
+                "pc-q35-*"
+            ]
+        }
+    ],
+    "features": [
+        "acpi-s3",
+        "acpi-s4",
+        "amd-sev",
+	"enrolled-keys",
+        "verbose-dynamic"
+    ],
+    "tags": [
+
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "description": "UEFI firmware for x86_64 XENFV",
+    "interface-types": [
+        "uefi"
+    ],
+    "mapping": {
+        "device": "flash",
+        "executable": {
+            "filename": "@DATADIR@/ovmf-x86_64-ms-4m.bin",
+            "format": "raw"
+        },
+        "nvram-template": {
+            "filename": "@DATADIR@/ovmf-x86_64-ms-4m-vars.bin",
+            "format": "raw"
+        }
+    },
+    "targets": [
+        {
+            "architecture": "x86_64",
+            "machines": [
+                "xenfv"
+            ]
+        }
+    ],
+    "features": [
+    ],
+    "tags": [
+    ]
+}
