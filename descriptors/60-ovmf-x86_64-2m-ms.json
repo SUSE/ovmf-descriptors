@@ -27,6 +27,7 @@
         "acpi-s3",
         "acpi-s4",
         "amd-sev",
+        "amd-sev-es",
 	"enrolled-keys",
         "verbose-dynamic"
     ],

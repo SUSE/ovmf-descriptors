@@ -27,6 +27,7 @@
         "acpi-s3",
         "acpi-s4",
         "amd-sev",
+        "amd-sev-es",
         "verbose-dynamic"
     ],
     "tags": [
