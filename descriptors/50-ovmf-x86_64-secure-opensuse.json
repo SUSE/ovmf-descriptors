@@ -25,7 +25,6 @@
     "features": [
         "acpi-s3",
         "acpi-s4",
-        "amd-sev",
         "requires-smm",
         "secure-boot",
 	"enrolled-keys",
