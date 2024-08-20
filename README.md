@@ -2,3 +2,6 @@
 There are firmware descriptors of OVMF for qemu on openSUSE/SLE. Base on the
 descriptors in qemu git repo:
     https://git.qemu.org/?p=qemu.git;a=tree;f=pc-bios/descriptors
+
+This is the source repo of descriptors.tar.xz in openSUSE:Factory/ovmf package:
+    https://build.opensuse.org/package/show/openSUSE:Factory/ovmf
