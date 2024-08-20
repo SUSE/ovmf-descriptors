@@ -1,0 +1,35 @@
+{
+    "description": "UEFI firmware for x86_64, with AMD SEV",
+    "interface-types": [
+        "uefi"
+    ],
+    "mapping": {
+        "device": "flash",
+        "executable": {
+            "filename": "@DATADIR@/ovmf-x86_64-sev-code.bin",
+            "format": "raw"
+        },
+        "nvram-template": {
+            "filename": "@DATADIR@/ovmf-x86_64-sev-vars.bin",
+            "format": "raw"
+        }
+    },
+    "targets": [
+        {
+            "architecture": "x86_64",
+            "machines": [
+                "pc-q35-*"
+            ]
+        }
+    ],
+    "features": [
+        "acpi-s4",
+	"amd-sev",
+	"amd-sev-es",
+	"amd-sev-snp",
+        "verbose-dynamic"
+    ],
+    "tags": [
+
+    ]
+}
