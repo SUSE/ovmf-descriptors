@@ -26,6 +26,7 @@
     "features": [
         "acpi-s3",
         "acpi-s4",
+        "secure-boot",
 	"enrolled-keys",
         "verbose-dynamic"
     ],
