@@ -5,12 +5,9 @@
     ],
     "mapping": {
         "device": "flash",
+	"mode": "stateless",
         "executable": {
-            "filename": "@DATADIR@/ovmf-x86_64-sev-code.bin",
-            "format": "raw"
-        },
-        "nvram-template": {
-            "filename": "@DATADIR@/ovmf-x86_64-sev-vars.bin",
+            "filename": "@DATADIR@/ovmf-x86_64-sev.bin",
             "format": "raw"
         }
     },
