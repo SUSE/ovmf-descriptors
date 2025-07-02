@@ -1,13 +1,13 @@
 {
-    "description": "UEFI firmware for x86_64, with AMD SEV (Stateless)",
+    "description": "UEFI firmware for x86_64, with Intel TDX (Stateless)",
     "interface-types": [
         "uefi"
     ],
     "mapping": {
         "device": "flash",
-	"mode": "stateless",
+	    "mode": "stateless",
         "executable": {
-            "filename": "@DATADIR@/ovmf-x86_64-sev.bin",
+            "filename": "@DATADIR@/ovmf-x86_64-tdx-secureboot.bin",
             "format": "raw"
         }
     },
@@ -20,9 +20,9 @@
         }
     ],
     "features": [
-	"amd-sev",
-	"amd-sev-es",
-	"amd-sev-snp",
+        "enrolled-keys",
+        "intel-tdx",
+        "secure-boot",
         "verbose-dynamic"
     ],
     "tags": [
