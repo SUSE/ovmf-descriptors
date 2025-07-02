@@ -1,0 +1,31 @@
+{
+    "description": "UEFI firmware for x86_64, with Intel TDX (Stateless)",
+    "interface-types": [
+        "uefi"
+    ],
+    "mapping": {
+        "device": "flash",
+	    "mode": "stateless",
+        "executable": {
+            "filename": "@DATADIR@/ovmf-x86_64-tdx-secureboot.bin",
+            "format": "raw"
+        }
+    },
+    "targets": [
+        {
+            "architecture": "x86_64",
+            "machines": [
+                "pc-q35-*"
+            ]
+        }
+    ],
+    "features": [
+        "enrolled-keys",
+        "intel-tdx",
+        "secure-boot",
+        "verbose-dynamic"
+    ],
+    "tags": [
+
+    ]
+}
