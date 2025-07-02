@@ -1,5 +1,5 @@
 {
-    "description": "UEFI firmware for x86_64, with AMD SEV",
+    "description": "UEFI firmware for x86_64, with AMD SEV (Stateless)",
     "interface-types": [
         "uefi"
     ],
@@ -20,7 +20,6 @@
         }
     ],
     "features": [
-        "acpi-s4",
 	"amd-sev",
 	"amd-sev-es",
 	"amd-sev-snp",
