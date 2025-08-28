@@ -1,11 +1,11 @@
 {
-    "description": "UEFI firmware for x86_64, with Intel TDX",
+    "description": "UEFI firmware for x86_64, with AMD SEV-SNP",
     "interface-types": [
         "uefi"
     ],
     "mapping": {
         "device": "memory",
-        "filename": "@DATADIR@/ovmf-x86_64-tdx-secureboot.bin"
+        "filename": "@DATADIR@/ovmf-x86_64-sev.bin"
     },
     "targets": [
         {
@@ -16,9 +16,7 @@
         }
     ],
     "features": [
-        "enrolled-keys",
-        "intel-tdx",
-        "secure-boot",
+        "amd-sev-snp",
         "verbose-dynamic"
     ],
     "tags": [

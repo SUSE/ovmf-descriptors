@@ -5,7 +5,7 @@
     ],
     "mapping": {
         "device": "flash",
-	"mode": "stateless",
+        "mode": "stateless",
         "executable": {
             "filename": "@DATADIR@/ovmf-x86_64-sev.bin",
             "format": "raw"
@@ -20,9 +20,8 @@
         }
     ],
     "features": [
-	"amd-sev",
-	"amd-sev-es",
-	"amd-sev-snp",
+        "amd-sev",
+        "amd-sev-es",
         "verbose-dynamic"
     ],
     "tags": [
